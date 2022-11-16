@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="./index_files/style.css" rel="stylesheet">
+<title>Website of Jeshmitha's Research</title>
+</head>
+<body>
+
+		<div id="main">
+            <h2 class="logo">CEAS LAB 37</h2> 
+				<div id="top_nav">
+					<div class="top_link_right">Jeshmitha Gunuganti, MS Student</div>
+				</div>
+			<div class="clear"></div>
+			<div id="content_handler">
+				<div class="line" style="color:#000000;">Unsupervised Video Summarization with Adversarial Graph-based Attention Network</div>
+<p><b>ABSTRACT</b></p>
+
+<p>Video summarization aims at identifying the most important parts of a video that can summarize the video storyline. We propose an unsupervised learning method to perform automatic video summarization by selecting key-shots in the video. Our main idea is to adversarially train a model that employs graphs to interpret a video and attention mechanism to model temporal-dependencies among video frames. The graph representation of a video enables the model to learn the relationship among frames, revealing the intrinsic structure of the video. The attention mechanism, on the other hand, allows the model to capture the magnitude of these relationships. Both coupled together can yield a representation that captures the visual information required for estimating frame importance score. Our proposed model involves an attention-based encoder that transforms the features extracted from pre-trained CNN models into representations that can be used by a graph-based generator for video reconstruction and a discriminator that guides the generator by distinguishing the original and reconstructed video. The proposed model is trained incrementally using different loss functions, and its performance when evaluated on both TVSum and SumMe datasets achieves state-of-the-art result  demonstrating the effectiveness of graph-based attention network.</p>
+<p>
+    <a>PAPER</a> | <a>CODE</a>
+</p>
+<div class="line" style="color:#000000;">Framework</div>
+<br/>
+    <img src="./index_files/framework.png" alt="Framework" style="width:1200px;height:800px;" class="center">
+
+<div class="line" style="color:#000000;">Video Results</div>  
+<p>To illustrate the model performance qualitatively by presenting the results for a sample video - "GoogaMooga Sneak Peek Joseph Leonard's Fried Chicken Sandwich cooking video" (Video-20 in TVSum Dataset)</p>
+
+<div class="line" style="color:#000000;">Ground truth scores Vs Predicted scores</div>   
+    <img src="./index_files/video_20_dist.png" alt="Distribution" style="width:800px;height:400px;" class="center">
+    <p>The proposed model is able to predict the scores very close to the human annotated scores, proving the superiority of the model.</p>
+
+<div class="line" style="color:#000000;">Ground Truth Summary</div>
+<br/>
+    <video width="320" height="240" class="center" controls="controls"/>
+        <source src="./index_files/video_20_gt.avi" type="video/avi">
+    Your browser does not support the video tag.
+    </video>
+    <img src="./index_files/video-20_gtss.png" alt="Ground Truth Summary" style="width:800px;height:400px;" class="center">
+</br>
+<div class="line" style="color:#000000;">Predicted Summary</div>
+<br/>
+    <video width="320" height="240" class="center" controls="controls"/>
+        <source src="./index_files/video_20_pr.avi" type="video/avi">
+    Your browser does not support the video tag.
+    </video>
+    <img src="./index_files/video-20_pss.png" alt="Predicted Summary" style="width:800px;height:400px;" class="center">
+</br>
+<div class="line" style="color:#000000;">Future scope</div>
+<p>Given the objective of our unsupervised method and the outcomes obtained, we intend to evaluate our methodology on a variety of datasets going forward and to optimize the model to be able to apply it in various domains.</p>
+
+</body></html>

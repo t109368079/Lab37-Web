@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ZhiTIng Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!------Main Section-->
+        <div class="Main">
+            <nav>
+                <h2 class="logo">CEAS LAB 37</h2>
+                <ul>
+                    <li> <a href="#">About me</a></li>
+                    <li> <a href="#research_id">Research</a></li>
+                </ul>
+            </nav>
+
+            <div class="main">
+                <img src="./image/Photo.jpg">
+            
+
+                <div class="About-text">
+                    <h2>Zhi Ting Yeh</h2>
+                    <p>
+                        MSc student at Department of Computer Science in University of Cincinnati from Spring 2022 to present. Graduated from National Taipei University of Technology,
+                        Taipei, Taiwan at Department of Electronic Engineering in 2022. My research foucs on video semanic analysis using deep learning e.g. video scene detection and video summarization.
+                        For video scene detection and video summarization I implement my model in Python with Pytorch deep learning framework. In addition, C# with .net framework is applied for visualize 
+                        the scene detection result.
+                    </p>
+                    <p>
+                        I am now working at UC simulation center colabation with P&G as software engineering intern. My job focus on image processing and object detection with yolo.
+                        Other working experience involve Embedding System engineer customize embedded borad for motion control with Xilinx FPGA platform. Research and Teaching assistance 
+                        in UC for Applied AI and Machine Learning course.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!------Research Section----->
+        <section class="research">
+            <div class="title" id="research_id">
+                <h5>Research</h5>
+            </div>
+            
+
+            <div class="video-scene">
+                <div class="vsc">
+                    <h5>Video Scene Detection</h5>
+                    <img src="./image/scene_detection.png">
+                    <div class="video_scene_text">
+                        <p>
+                            "Identify Video Scene Boundaries using Transformer Encoding Linker Network(TELNet)". Video has hierarchical structure where from top to bottom
+                            is video -> scene -> shot -> frame. Shot as basic unit of video, scene is formed by cluster semantical related shot. We support shot in 
+                            a scene has similar semantic relationship in feature space. In this research, we proposed Transformer Encoding Linker Network(TELNet) 
+                            which embedded the relationship amoung shots using Transformer Encoder, shots are connected based on its semantic relation using Linker.
+                            A novel label generation method was proposed to train the TELNet model. Once there are no overhead link across two shot, we declare ther
+                            is a scene boundary.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="https://github.com/JIA-BIN-CHANG/TELNET">Github Page</a>
+                            <a class="button" href="./files/IEEE_Access_TELNet.pdf">Paper</a>
+                        </p>
+                    </div>
+                </div>
+
+            
+                <div class="vsc">
+                    <h5>Video Summarization</h5>
+                    <img src="./image/summarization.png">
+                    <div class="video_scene_text">
+                        <p>
+                            "Video Summarization using Shot-level Relation-Aware Attention Network(VSRAN)". Video Summarization aim to extract the most inforative or important 
+                            part with limit length of a video. In this research, unlike other state-of-the-art methods focus on frame-level keyframe selection, we consider shot 
+                            as the basic unit of process video summarization. We use pre-trained 2D CNN model (googleNet) to extract the static that represent the texture and object feature on shots and 3D
+                            CNN model (3D ResNet) to represent the motion of the shots. Novel feature selection method are proposed the select the feature that can best represent the shot.
+                            Relation-Aware Attention is applied to fused the motion feature with static feature. Regression network fit with the fused feature to predict the importance shot score.
+                            Final summaries are formed using optimal algorithm to maximum the summary shot score.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Github Page</a>
+                            <a class="button" href="./files/VSRAN_For Journal.pdf">Paper</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </body>
+</html>
