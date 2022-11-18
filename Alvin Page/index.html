@@ -36,7 +36,6 @@
                         Graduated from National Taipei University of Technology, Taipei, Taiwan at Department of Electrical Engineering in 2020.
                     </p>
                     <p>
-                        
                         I have multiple experience in computer vision and robotics field, mainly related to object detection and robot operating system (ROS).
                         Besides, I also have some experience in data analysis during my academic year. 
                         I have strong knowledge and understanding of machine learning model designing and model evaluating. 
@@ -59,12 +58,12 @@
                     <img src="./image/TELNet Diagram.png">
                     <div class="video_scene_text">
                         <p>
-                            "Identify Video Scene Boundaries using Transformer Encoding Linker Network(TELNet)". Video has hierarchical structure where from top to bottom
-                            is video -> scene -> shot -> frame. Shot as basic unit of video, scene is formed by cluster semantical related shot. We support shot in 
-                            a scene has similar semantic relationship in feature space. In this research, we proposed Transformer Encoding Linker Network(TELNet) 
-                            which embedded the relationship amoung shots using Transformer Encoder, shots are connected based on its semantic relation using Linker.
-                            A novel label generation method was proposed to train the TELNet model. Once there are no overhead link across two shot, we declare ther
-                            is a scene boundary.
+                            In this research, Chia Yang Wu and I proposed a merge algorithm to eliminate the fixed boundaries problem in Transformer Encoding Linker Network(TELNet). 
+                            Because of the limited size of the computing memory, we fixed the input window size as a small amount. 
+                            However, it leads to the result of fixed boundaries in the result. 
+                            In order to eliminate the boundaries of every input window, we came up with a merge algorithm using sliding-window method. 
+                            We overlap the shots from the succeeding window, which we believe are the most possible shots that may link to shots in different window. 
+                            We combine the key shot candidates from both window, by linking the overlapping shots to their most related key shot from both windows, we therefore eliminate the fixed boundaries of every window.
                         </p>
                         <p style="text-align: center;">
                             <a class="button" href="https://github.com/JIA-BIN-CHANG/TELNET">Github Page</a>
@@ -89,8 +88,13 @@
                 </tr>
                 <tr>
                     <td>National Taipei University of Technology</td>
+                    <td>Master of Science in Computer Science</td>
+                    <td>2021 - Present</td>
+                </tr>
+                <tr>
+                    <td>National Taipei University of Technology</td>
                     <td>Bachelor of Science in Electrical Engineering</td>
-                    <td>2016 - 2020</td>
+                    <td>2017 - 2021</td>
                 </tr>
                 </table>
             </div>
