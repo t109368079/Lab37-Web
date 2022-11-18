@@ -15,7 +15,7 @@
         <!------Main Section-->
         <div class="Main" id="#about">
             <nav>
-                <h2 class="logo"><a href="../index.html"></a>LAB 37</h2>
+                <h2 class="logo"><a href="../index.html">LAB 37</a></h2>
                 <ul>
                     <li> <a href="#about">About me</a></li>
                     <li> <a href="#research_id">Research</a></li>
@@ -55,9 +55,13 @@
 
             <div class="video-scene">
                 <div class="vsc">
-                    <h5>Video Scene Detection</h5>
-                    <img src="./image/TELNet Diagram.png">
-                    <div class="video_scene_text">
+                    <h5><a class="button" href="https://github.com/JIA-BIN-CHANG/TELNET">Video Scene Detection</a></h5>
+
+                    <div class="vsc_img">
+                        <img src="./image/TELNet Diagram.png">
+                    </div>
+
+                    <div class="vsc_text">
                         <p>
                             "Identify Video Scene Boundaries using Transformer Encoding Linker Network(TELNet)". Video has hierarchical structure where from top to bottom
                             is video -> scene -> shot -> frame. Shot as basic unit of video, scene is formed by cluster semantical related shot. We support shot in 
@@ -66,18 +70,19 @@
                             A novel label generation method was proposed to train the TELNet model. Once there are no overhead link across two shot, we declare ther
                             is a scene boundary.
                         </p>
-                        <p style="text-align: center;">
-                            <a class="button" href="https://github.com/JIA-BIN-CHANG/TELNET">Github Page</a>
-                            <a class="button" href="./files/IEEE_Access_TELNet.pdf">Paper</a>
-                        </p>
-                    </div>
+                        
+                    </div>  
+                    
                 </div>
 
             
                 <div class="vsc">
-                    <h5>Video Summarization</h5>
-                    <img src="./image/summarization.png">
-                    <div class="video_scene_text">
+                    <h5><a class="button" href="https://github.com/t109368079/Video_Summarization_using_shot_level_Relation_Aware_Attetnion_Network_VSRAN">Video Summarization</a></h5>
+                    <div class="vsc_img">
+                        <img src="./image/summarization.png">
+                    </div>
+                    
+                    <div class="vsc_text">
                         <p>
                             "Video Summarization using Shot-level Relation-Aware Attention Network(VSRAN)". Video Summarization aim to extract the most inforative or important 
                             part with limit length of a video. In this research, unlike other state-of-the-art methods focus on frame-level keyframe selection, we consider shot 
@@ -86,12 +91,7 @@
                             Relation-Aware Attention is applied to fused the motion feature with static feature. Regression network fit with the fused feature to predict the importance shot score.
                             Final summaries are formed using optimal algorithm to maximum the summary shot score.
                         </p>
-                        <p style="text-align: center;">
-                            <a class="button" href="https://github.com/t109368079/Video_Summarization_using_shot_level_Relation_Aware_Attetnion_Network_VSRAN">Github Page</a>
-                            <a class="button" href="./files/VSRAN_For Journal.pdf">Paper</a>
-                        </p>
                     </div>
-                    
                 </div>
             </div>
         </section>
