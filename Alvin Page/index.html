@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alvin Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!------Main Section-->
+        <div class="Main" id="#about">
+            <nav>
+                <h2 class="logo"><a href="../index.html"></a>LAB 37</h2>
+                <ul>
+                    <li> <a href="#about">About me</a></li>
+                    <li> <a href="#research_id">Research</a></li>
+                    <li> <a href="#Education_id">Education</a></li>
+                    <li> <a href="#Contact_id">Contact Me</a></li>
+                </ul>
+                <script src="./script/scroll-down.js"></script>
+            </nav>
+
+            <div class="main">
+                <img src="./image/profile.jpg">
+            
+
+                <div class="About-text">
+                    <h2>Jia Bin Chang (Alvin)</h2>
+                    <p>
+                        MEng student at Department of Computer Science in University of Cincinnati from Fall 2022 to present. 
+                        Graduated from National Taipei University of Technology, Taipei, Taiwan at Department of Electrical Engineering in 2020.
+                    </p>
+                    <p>
+                        
+                        I have multiple experience in computer vision and robotics field, mainly related to object detection and robot operating system (ROS).
+                        Besides, I also have some experience in data analysis during my academic year. 
+                        I have strong knowledge and understanding of machine learning model designing and model evaluating. 
+                        Furthermore, based on the CO-OP experience at AUO, I have demonstrated the ability to communicate and collaborate with others.                         
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!------Research Section----->
+        <section class="research">
+            <div class="title" id="research_id">
+                <h5>Research</h5>
+            </div>
+            
+
+            <div class="video-scene">
+                <div class="vsc">
+                    <h5>Video Scene Detection</h5>
+                    <img src="./image/TELNet Diagram.png">
+                    <div class="video_scene_text">
+                        <p>
+                            "Identify Video Scene Boundaries using Transformer Encoding Linker Network(TELNet)". Video has hierarchical structure where from top to bottom
+                            is video -> scene -> shot -> frame. Shot as basic unit of video, scene is formed by cluster semantical related shot. We support shot in 
+                            a scene has similar semantic relationship in feature space. In this research, we proposed Transformer Encoding Linker Network(TELNet) 
+                            which embedded the relationship amoung shots using Transformer Encoder, shots are connected based on its semantic relation using Linker.
+                            A novel label generation method was proposed to train the TELNet model. Once there are no overhead link across two shot, we declare ther
+                            is a scene boundary.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="https://github.com/JIA-BIN-CHANG/TELNET">Github Page</a>
+                            <a class="button" href="./files/IEEE_Access_TELNet.pdf">Paper</a>
+                        </p>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!---------Education Section-->
+        <section class="Education_sec">
+            <div class="title" id="Education_id">
+                <h5>Education</h5>
+                <table>
+                <tr>
+                    <td>University of Cincinnati</td>
+                    <td>Master of Engineering in Artificial Intelligence</td>
+                    <td>2021 - Present</td>
+                </tr>
+                <tr>
+                    <td>National Taipei University of Technology</td>
+                    <td>Bachelor of Science in Electrical Engineering</td>
+                    <td>2016 - 2020</td>
+                </tr>
+                </table>
+            </div>
+        </section>
+
+        <!----------Contact Me Section-->
+        <section class="Contact">
+            <div class="title" id="Contact_id">
+
+            </div>
+
+            <ul>
+                <li>Email: changjb@mail.uc.edu</li>
+                <li><a href="https://www.linkedin.com/in/jiabinchang">LinkedIn</a></li>
+            </ul>
+        </section>
+
+
+    </body>
+</html>
